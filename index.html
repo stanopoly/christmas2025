@@ -32,6 +32,7 @@
       overflow-x: hidden;
     }
 
+    /* Snow animation */
     body::before, body::after {
       content: "";
       position: fixed;
@@ -47,14 +48,13 @@
       opacity: .45;
       z-index: -1;
     }
-
     @keyframes snow {
       0% { transform: translateY(-10vh); }
       100% { transform: translateY(10vh); }
     }
 
     .card {
-      background: rgba(255,255,255,0.92);
+      background: rgba(255,255,255,0.93);
       max-width: 1100px;
       width: 100%;
       border-radius: 24px;
@@ -102,7 +102,7 @@
     @media(max-width: 900px) { main { grid-template-columns: 1fr; } }
 
     .poem {
-      background: rgba(255,255,255,.95);
+      background: rgba(255,255,255,.96);
       border: 1px solid rgba(255,255,255,.6);
       border-radius: 18px;
       padding: 18px;
@@ -146,90 +146,6 @@
 
 <body>
   <div class="card">
-    <header>
-      <h1>Christmas_2025</h1>
-      <p>Wishing you joy, love & peace</p>
-    </header>
-
-    <!-- MAIN CONTENT + POEM + IMAGES remain unchanged -->
-
-
-    h1 {
-      font-family: "Great Vibes", cursive;
-      font-size: clamp(3rem, 4vw + 1rem, 4.5rem);
-      background-image: linear-gradient(
-        120deg,
-        var(--gold-light),
-        var(--gold),
-        var(--gold-soft),
-        var(--gold)
-      );
-      background-size: 200% auto;
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: shimmer 9s linear infinite;
-      text-shadow: 0 0 10px rgba(0,0,0,.6);
-    }
-
-    @keyframes shimmer {
-      0% { background-position: 0%; }
-      50% { background-position: 100%; }
-      100% { background-position: 0%; }
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 20px;
-      padding: 24px;
-    }
-    @media(max-width: 900px) { main { grid-template-columns: 1fr; } }
-
-    .poem {
-      background: rgba(255,255,255,.95);
-      border: 1px solid rgba(255,255,255,.6);
-      border-radius: 18px;
-      padding: 18px;
-      line-height: 1.7;
-      white-space: pre-wrap;
-      font-size: 0.95rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 10px;
-    }
-
-    .photo {
-      border-radius: 14px;
-      overflow: hidden;
-      border: 2px solid #fff;
-      background: #d7e4f5;
-      box-shadow: 0 6px 18px rgba(0,0,0,.4);
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: .35s ease;
-    }
-    .photo:hover img { transform: scale(1.04); }
-
-    footer {
-      background: #0b2035;
-      color: #eee;
-      padding: 14px;
-      text-align: center;
-      font-size: .9rem;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="card">
 
     <header>
       <h1>Christmas_2025</h1>
@@ -237,6 +153,7 @@
     </header>
 
     <main>
+
       <div class="poem">
 Our 2025 was one of change and one of loss,
 but there were plenty of celebrations, too!
@@ -245,10 +162,11 @@ we mourned our family pet
 and saw Presley become a bride, not one but two.
 
 We were joined this past spring
-by Kristi’s parents, Jerry and Linda—
+by Kristi’s parents, Jerry and Linda —
 from shores of the Big Island of Hawaii
 to an ethereal new home in Laguna Woods.
-Staying busy with hiking, gardening, and estate sale hunting, it looks like the fit is real good!
+Staying busy with hiking, gardening, and estate sale hunting,
+it looks like the fit is real good!
 
 Many of you have seen our pictures
 of our beloved dog, Rocko.
@@ -256,45 +174,58 @@ Our good boy was needed in heaven this year
 after 14 years of guarding our home
 from sketchy mailmen and squirrels.
 He was given many treats in his lifetime,
-but his dad would give him treats from the dinner table,
+but his dad would give him treats from the dinner table —
 which he knew would lead to quarrels.
 (And it was worth it!)
 
 We were fortunate to enjoy a week
-in the state we grew up in—Colorado.
+in the state we grew up in — Colorado.
 It was a combination of walking down memory lane,
 visiting family, and seeing our niece Presley get hitched.
+We spent time in Vail where we were married,
+in Ft. Collins where we went to school,
+and finished in Boulder for a beautiful wedding —
+our appreciation of the Flat Irons’ majesty enriched.
+
+I haven’t mentioned Luke thus far,
+our soon-to-be graduate.
+Some of you may remember Luke
+for his many stitches and broken bones.
+Well, he outdid himself this year —
+dislocating his elbow,
+which ended his intramural sports career,
+but he’s not one to groan.
+
+Kristi and Kelly had a nice trip to Oklahoma,
+visiting Aunt Coby and Uncle Ed.
+They celebrated their Chickasaw heritage
+and caught up on their busy lives —
+it’s trips like this that keep sisters bonded.
+
+Just before Thanksgiving,
+Kristi was in New York City
+mixing business with holiday cheer.
+Of all the times to be there —
+the decorations were shining,
+Wicked was everywhere,
+and ice skating at Rockefeller Plaza —
+it was the perfect time of year!
+
+And to end 2025 with a bang —
+we shared Thanksgiving with
+the Pearson-Leahy-Wahlberg-Bridgewater clan.
+Our awesome friend Vicki put us up for a week,
+while giving away her eldest daughter —
+OG Presley.
+It was a wonderful ceremony,
+and we enjoyed time with Luke
+and an old family friend,
+followed by a lovely Thanksgiving feast.
+(No rhyme on this verse, sorry.)
 
 Let’s spend 2026 lifting each other up.
 Pray for each other, be kind,
 be forgiving and polite.
-
-“One Love, One Heart—
+As the great poet Bob Marley wrote:
+“One Love, One Heart —
 let’s get together and feel alright!”
-      </div>
-
-      <div class="grid">
-        <div class="photo"><img src="images/A.jpeg"></div>
-        <div class="photo"><img src="images/C.jpeg"></div>
-        <div class="photo"><img src="images/D.jpeg"></div>
-        <div class="photo"><img src="images/E.jpeg"></div>
-        <div class="photo"><img src="images/F.jpeg"></div>
-        <div class="photo"><img src="images/G.jpeg"></div>
-        <div class="photo"><img src="images/H.jpeg"></div>
-        <div class="photo"><img src="images/I.jpeg"></div>
-        <div class="photo"><img src="images/J.JPEG"></div>
-        <div class="photo"><img src="images/K.jpeg"></div>
-        <div class="photo"><img src="images/L.jpeg"></div>
-        <div class="photo"><img src="images/M.jpeg"></div>
-        <div class="photo"><img src="images/O.jpeg"></div>
-        <div class="photo"><img src="images/P.jpeg"></div>
-      </div>
-    </main>
-
-    <footer>
-      Christmas_2025
-    </footer>
-
-  </div>
-</body>
-</html>
