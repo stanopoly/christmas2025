@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Christmas_2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" 
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-light: #f7e7a8;
+      --gold-soft: #fffbda;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #3c6382, #0b1726 55%, #020611);
+      padding: 24px;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #102537;
+      overflow-x: hidden;
+    }
+
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      inset: -50%;
+      background-image:
+        radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,.8), transparent),
+        radial-gradient(2px 2px at 80% 30%, rgba(255,255,255,.8), transparent),
+        radial-gradient(3px 3px at 30% 70%, rgba(255,255,255,.7), transparent),
+        radial-gradient(2px 2px at 60% 10%, rgba(255,255,255,.7), transparent),
+        radial-gradient(3px 3px at 90% 80%, rgba(255,255,255,.8), transparent);
+      pointer-events: none;
+      animation: snow 45s linear infinite;
+      opacity: .45;
+      z-index: -1;
+    }
+    @keyframes snow {
+      0% { transform: translateY(-10vh); }
+      100% { transform: translateY(10vh); }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.92);
+      max-width: 1100px;
+      width: 100%;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 24px 50px rgba(0,0,0,.5);
+      border: 1px solid rgba(255,255,255,.5);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.35);
+      color: #fff;
+    }
+
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(3rem, 4vw + 1rem, 4.5rem);
+      background-image: linear-gradient(
+        120deg,
+        var(--gold-light),
+        var(--gold),
+        var(--gold-soft),
+        var(--gold)
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: shimmer 9s linear infinite;
+      text-shadow: 0 0 10px rgba(0,0,0,.6);
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 0%; }
+      50% { background-position: 100%; }
+      100% { background-position: 0%; }
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 20px;
+      padding: 24px;
+    }
+    @media(max-width: 900px) { main { grid-template-columns: 1fr; } }
+
+    .poem {
+      background: rgba(255,255,255,.95);
+      border: 1px solid rgba(255,255,255,.6);
+      border-radius: 18px;
+      padding: 18px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .photo {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 2px solid #fff;
+      background: #d7e4f5;
+      box-shadow: 0 6px 18px rgba(0,0,0,.4);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: .35s ease;
+    }
+    .photo:hover img { transform: scale(1.04); }
+
+    footer {
+      background: #0b2035;
+      color: #eee;
+      padding: 14px;
+      text-align: center;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <header>
+      <h1>Christmas_2025</h1>
+      <p>Wishing you joy, love & peace</p>
+    </header>
+
+    <main>
+      <div class="poem">
+Our 2025 was one of change and one of loss,
+but there were plenty of celebrations, too!
+We gained two loved ones to our state,
+we mourned our family pet
+and saw Presley become a bride, not one but two.
+
+We were joined this past spring
+by Kristi’s parents, Jerry and Linda—
+from shores of the Big Island of Hawaii
+to an ethereal new home in Laguna Woods.
+Staying busy with hiking, gardening, and estate sale hunting,
+it looks like the fit is real good!
+
+Many of you have seen our pictures
+of our beloved dog, Rocko.
+Our good boy was needed in heaven this year
+after 14 years of guarding our home
+from sketchy mailmen and squirrels.
+He was given many treats in his lifetime,
+but his dad would give him treats from the dinner table—
+which he knew would lead to quarrels.
+(And it was worth it!)
+
+We were fortunate to enjoy a week
+in the state we grew up in—Colorado.
+It was a combination of walking down memory lane,
+visiting family, and seeing our niece Presley get hitched.
+
+Let’s spend 2026 lifting each other up.
+Pray for each other, be kind,
+be forgiving and polite.
+
+“One Love, One Heart—
+let’s get together and feel alright!”
+      </div>
+
+      <div class="grid">
+        <div class="photo"><img src="images/A.jpeg"></div>
+        <div class="photo"><img src="images/C.jpeg"></div>
+        <div class="photo"><img src="images/D.jpeg"></div>
+        <div class="photo"><img src="images/E.jpeg"></div>
+        <div class="photo"><img src="images/F.jpeg"></div>
+        <div class="photo"><img src="images/G.jpeg"></div>
+        <div class="photo"><img src="images/H.jpeg"></div>
+        <div class="photo"><img src="images/I.jpeg"></div>
+        <div class="photo"><img src="images/J.JPEG"></div>
+        <div class="photo"><img src="images/K.jpeg"></div>
+        <div class="photo"><img src="images/L.jpeg"></div>
+        <div class="photo"><img src="images/M.jpeg"></div>
+        <div class="photo"><img src="images/O.jpeg"></div>
+        <div class="photo"><img src="images/P.jpeg"></div>
+      </div>
+    </main>
+
+    <footer>
+      Christmas_2025
+    </footer>
+
+  </div>
+</body>
+</html>
